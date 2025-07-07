@@ -18,6 +18,7 @@ require_once("config.php");
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="listado.php">Mostrar alumnos</a></li>
                 <li><a href="registro.php">Insertar Alumnos</a></li>
+                <li><a href="asignaturas/registro.php">Insertar Asignatura</a></li>
             </ul>
         </nav>
     </header>
