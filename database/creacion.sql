@@ -1,4 +1,4 @@
--- Active: 1750671264799@@127.0.0.1@3306@phpmyadmin
+-- Active: 1750671264799@@127.0.0.1@3306@seneca
 
 create database seneca
 character set latin1
@@ -22,3 +22,5 @@ CREATE TABLE alumnos (
     fecha_nac DATE,
     email VARCHAR(100)
 );
+
+select *, Concat(nombre, ' ', apellido1, ' ', apellido2) from alumnos;

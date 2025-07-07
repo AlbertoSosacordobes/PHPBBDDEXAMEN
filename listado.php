@@ -19,7 +19,19 @@
         <tbody>
        
        <?php
-            $consulta ="SELECT * FROM alumnos";
+            if (isset($_POST['filtrar'])) {
+                echo "vengo de POST";
+                $nomApe = $_POST['nomApe'];
+
+
+
+                $consulta="SELECT * FROM alumnos WHERE CONCAT(nombre, ' ', apellido1, ' ', apellido2) like '%".$nomApe."%'";
+            } else {
+                echo("vengo de menú");
+                $consulta ="SELECT * FROM alumnos";
+            }
+
+
             // Ejecuta la consulta y devuelve un array con todas las 
             // filas resultantes
             $filas = mysqli_query($conexion, $consulta);
@@ -58,6 +70,19 @@
             }
             ?>
     </div>
+
+        <!-- Formulario para filtrar la informacion de la tabla
+         Este foormulario enlaza con la propia página, de tal manera que si se llega desde el formulario -> queremos filtrar información, pero si no se llega por POST queremos mostrar todos los datos. -->
+    <h2>Buscar:</h2>
+    <form action="listado.php" method="post">
+        <label for="nomApe">Filtrar por Nombre y/o apellidos: </label>
+        <input type="text" name="nomApe" id="nomApe">
+
+        <input type="submit" name='filtrar' value="Filtrar">
+        <a href="listado.php">Limpiar filtro</a>
+    </form>
+    
+
 
 </article>
 
