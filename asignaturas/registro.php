@@ -12,26 +12,26 @@ require_once('../plantillas/cabecera.php');
         </div>
 
         <div class="control">
-            <label for="apellido1">Apellido1:</label>
-            <input type="text" name="apellido1" id="apellido1" required>
+            <label for="tipo">Tipo:</label>
+            <select name="tipo" id="tipo" >
+                <option value="TRONCAL">Troncal</option>
+                <option value="OBLIGATORIA">Obligatoria</option>
+                <option value="OPTATIVA">Optativa</option>
+            </select>
         </div>
 
         <div class="control">
-            <label for="apellido2">Apellido2:</label>
-            <input type="text" name="apellido2" id="apellido2">
+            <label for="creditos">Créditos:</label>
+            <input type="number" name="creditos" id="creditos" value="6" step="0.5" min="0.5" max="15">
         </div>
 
         <div class="control">
-            <label for="fechanac">Fecha Nacimiento:</label>
-            <input type="date" name="fechanac" id="fechanac">
+            <label for="curso">Curso:</label>
+            <input type="number" name="curso" id="curso" min="1" max="4" step="1">
         </div>
 
         <div class="control">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" name="email" id="email">
-        </div>
-        <div class="control">
-            <input type="submit" value="Añadir Alumno">
+            <input type="submit" value="Añadir Asignatura">
         </div>
 
     </form>

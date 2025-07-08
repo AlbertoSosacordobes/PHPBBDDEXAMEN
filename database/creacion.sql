@@ -23,12 +23,10 @@ CREATE TABLE alumnos (
     email VARCHAR(100)
 );
 
--- select *, Concat(nombre, ' ', apellido1, ' ', apellido2) from alumnos;
-
 create table asignaturas (
     id int unsigned AUTO_INCREMENT primary key,
     nombre varchar(50) not null,
     tipo enum('TRONCAL', 'OBLIGATORIA', 'OPTATIVA'),
     creditos FLOAT DEFAULT 6 check(creditos>0),
-    curso TINYINT unsigned, 
+    curso TINYINT unsigned 
 );
