@@ -1,6 +1,6 @@
 <?php 
 // Varoables con la rutas tanto de HTML como de PHP. En PHP debe ir desde el documnet root y en HTML desde la ruta de inicio del sitio web
-$ruta = '/PHPBBDD/';
+$ruta = '/PHPBBDDEXAMEN/';
 $rutaPHP = $_SERVER['DOCUMENT_ROOT'].$ruta;
 // echo $_SERVER['DOCUMENT_ROOT'].$ruta;
 
@@ -31,6 +31,8 @@ require_once($rutaPHP."config.php");
                 <li><a href="<?=$ruta?>registro.php">Insertar Alumnos</a></li>
                 <li><a href="<?=$ruta?>asignaturas/listado.php">Mostrar asignaturas</a></li>
                 <li><a href="<?=$ruta?>asignaturas/registro.php">Insertar Asignatura</a></li>
+                <li><a href="<?=$ruta?>vehiculos/listado.php">Mostrar Vehiculos</a></li>
+                <li><a href="<?=$ruta?>vehiculos/registro.php">Insertar Vehiculos</a></li>
             </ul>
         </nav>
     </aside>
