@@ -43,8 +43,8 @@
                 echo "<td> ".$fila['fecha_matriculacion']. " </td>\n";
                 echo "<td> ".$fila['cilindrada']." </td>\n";
              // Mostrar SI o NO según el valor de itv_pasada
-            $itv_texto = ($fila['itv_pasada'] == 1 || strtolower($fila['itv_pasada']) == 'si') ? 'SI' : 'NO';
-            echo "<td> $itv_texto </td>\n";
+        $itv_texto = ($fila['itv_pasada'] == 1 || strtolower($fila['itv_pasada']) == 'si') ? 'SI' : 'NO';
+        echo "<td> $itv_texto </td>\n";
                 echo "<td><a href='editar.php?id=".$fila['matricula']."' class='btn btn-primary'>Editar</a></td>\n";
                 echo "<td><a href='borrado.php?id=".$fila['matricula']."' class='btn btn-primary'>Eliminar</a></td>\n";
                 echo "</tr>\n";
