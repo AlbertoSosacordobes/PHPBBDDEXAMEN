@@ -1,7 +1,7 @@
 <?php
 
 if (!isset($_POST['nombre'])) {
-    // Mueve el navegador hasta otra página si no se llegadesde el formulario
+    // Mueve el navegador hasta otra página si no se llega desde el formulario
     header('Location:registro.php');
 }
 require_once('../plantillas/cabecera.php');
@@ -24,7 +24,7 @@ require_once('../plantillas/cabecera.php');
 
     <?php 
         $consulta = 
-            "insert into asignaturas(nombre,tipo,creditos,curso) values('$nombre','$tipo', $creditos, $curso) ";
+            "insert into asignaturas (nombre,tipo,creditos,curso) values('$nombre','$tipo', $creditos, $curso) ";
 
            // ejecutamos la consulta
            $resultado = mysqli_query($conexion, $consulta);

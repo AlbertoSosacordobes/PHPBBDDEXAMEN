@@ -3,35 +3,56 @@ require_once('../plantillas/cabecera.php');
 ?>
 
 <article>
-    <h2>Dar de alta un vehiculo/h2>
+    <h2><h2>Dar de alta un vehiculo</h2>
 
     <form action="insertar.php" method="post">
         <div  class="control mb-3">
-            <label for="matricula" class="col-sm-2 col-form-label">Nombre:</label>
+            <label for="matricula" class="col-sm-2 col-form-label">Matricula:</label>
             <input type="text" name="matricula" id="matricula" required class="form-control">
+        </div>
+
+        <div  class="control mb-3">
+            <label for="marca"class="col-sm-2 col-form-label">Marca:</label>
+            <input type="text" name="marca" id="marca" required class="form-control">
+        </div>
+
+         <div  class="control mb-3">
+            <label for="modelo"class="col-sm-2 col-form-label">Modelo:</label>
+            <input type="text" name="modelo" id="modelo" required class="form-control">
         </div>
 
         <div  class="control mb-3">
             <label for="tipo"class="col-sm-2 col-form-label">Tipo:</label>
             <select name="tipo" id="tipo" class="form-select form-select-lg">
-                <option value="TRONCAL">Troncal</option>
-                <option value="OBLIGATORIA">Obligatoria</option>
-                <option value="OPTATIVA">Optativa</option>
-            </select>
+                <option value="Turismo">Turismo</option>
+                <option value="autobus">Autobús</option>
+                <option value="camion">Camión</option>
+                <option value="furgon">Furgón</option>
+              
+              </select>
         </div>
 
         <div  class="control mb-3">
-            <label for="creditos"class="col-sm-2 col-form-label">Créditos:</label>
-            <input type="number" name="creditos" id="creditos" value="6" step="0.5" min="0.5" max="15" class="form-control">
+            <label for="color"class="col-sm-2 col-form-label">Color:</label>
+            <input type="text" name="color" id="color" required class="form-control">
+        </div>
+         
+        <div  class="control mb-3">
+            <label for="fecha_matriculacion"class="col-sm-2 col-form-label">Fecha de Matriculacion:</label>
+            <input type="date" name="fecha_matriculacion" id="fecha_matriculacion" class="form-control">
+        </div>
+        <div  class="control mb-3">
+            <label for="cilindrada"class="col-sm-2 col-form-label">Cilindrada:</label>
+            <input type="text" name="cilindrada" id="cilindrada" required class="form-control">
+        </div>
+
+          <div class="form-check mb-3">
+            <input type="checkbox" name="itv_pasada" id="itv_pasada" class="form-check-input" checked>
+            <label for="itv_pasada" class="form-check-label">ITV pasada</label>
         </div>
 
         <div  class="control mb-3">
-            <label for="curso"class="col-sm-2 col-form-label">Curso:</label>
-            <input type="number" name="curso" id="curso" min="1" max="4" step="1" class="form-control">
-        </div>
-
-        <div  class="control mb-3">
-            <input type="submit" value="Añadir Asignatura"   class="btn btn-primary">
+            <input type="submit" value="Añadir Vehiculo"   class="btn btn-primary">
         </div>
 
     </form>
