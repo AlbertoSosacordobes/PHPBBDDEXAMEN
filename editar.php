@@ -30,32 +30,32 @@ $email= $fila['email'];
     <h2>Editar los datos de un alumno</h2>
 
     <form action="actualizar.php" method="post">
-        <div class="control">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" required value='<?=$nombre?>'>
+        <div  class="control mb-3">
+            <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required value='<?=$nombre?>' class="form-control">
         </div>
 
-        <div class="control">
-            <label for="apellido1">Apellido1:</label>
-            <input type="text" name="apellido1" id="apellido1" required value='<?=$apellido1?>'>
+        <div  class="control mb-3">
+            <label for="apellido1" class="col-sm-2 col-form-label">Apellido1:</label>
+            <input type="text" name="apellido1" id="apellido1" required value='<?=$apellido1?>' class="form-control">
         </div>
 
-        <div class="control">
-            <label for="apellido2">Apellido2:</label>
-            <input type="text" name="apellido2" id="apellido2"  value='<?=$apellido2?>'>
+        <div  class="control mb-3">
+            <label for="apellido2" class="col-sm-2 col-form-label">Apellido2:</label>
+            <input type="text" name="apellido2" id="apellido2"  value='<?=$apellido2?>' class="form-control">
         </div>
 
-        <div class="control">
-            <label for="fechanac">Fecha Nacimiento:</label>
-            <input type="date" name="fechanac" id="fechanac"  value='<?=$fechaNac?>'>
+        <div  class="control mb-3">
+            <label for="fechanac" class="col-sm-2 col-form-label">Fecha Nacimiento:</label>
+            <input type="date" name="fechanac" id="fechanac"  value='<?=$fechaNac?>' class="form-control">
         </div>
 
-        <div class="control">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" name="email" id="email"  value='<?=$email?>'>
+        <div  class="control mb-3">
+            <label for="email" class="col-sm-2 col-form-label">Correo electrónico:</label>
+            <input type="email" name="email" id="email"  value='<?=$email?>' class="form-control">
         </div>
-        <div class="control">
-            <input type="submit" value="Editar Alumno">
+        <div  class="control mb-3">
+            <input type="submit" value="Editar Alumno"  class="btn btn-primary">
         </div>
 
 <!-- Colocamos en el formulario un campo oculto con la información del id del alumno a editar, esto hace que en el envío del formulario se envíe el dato -->

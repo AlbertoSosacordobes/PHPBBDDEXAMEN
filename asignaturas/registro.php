@@ -7,7 +7,7 @@ require_once('../plantillas/cabecera.php');
 
     <form action="insertar.php" method="post">
         <div  class="control mb-3">
-            <label for="nombre"class="col-sm-2 col-form-label">Nombre:</label>
+            <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
             <input type="text" name="nombre" id="nombre" required class="form-control">
         </div>
 

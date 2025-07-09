@@ -38,8 +38,8 @@
                 echo "<td> ".$fila['tipo']." </td>\n";
                 echo "<td> ".$fila['creditos']." </td>\n";
                 echo "<td> ".$fila['curso']. " </td>\n";
-                echo "<td><a href='editar.php?id=".$fila['id']."'>Editar</a></td>\n";
-                echo "<td><a href='borrado.php?id=".$fila['id']."'>Eliminar</a></td>\n";
+                echo "<td><a href='editar.php?id=".$fila['id']."' class='btn btn-primary'>Editar</a></td>\n";
+                echo "<td><a href='borrado.php?id=".$fila['id']."' class='btn btn-primary'>Eliminar</a></td>\n";
                 echo "</tr>\n";
                 
             }

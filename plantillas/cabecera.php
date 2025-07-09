@@ -17,7 +17,7 @@ require_once($rutaPHP."config.php");
     <link rel="stylesheet" href="<?=$ruta?>css/estilos.css">
 </head>
 <body>
-    <div class="row col-lg-8 mx-auto py-md-5">
+    <div class="row col-lg-10 mx-auto py-md-5 shadow-lg p-3 mb-5 bg-white rounded" id="contenedor">
     <header class="align-items-center pb-3 mb-5 border-bottom">
         <img src="<?=$ruta?>assets/imgs/seneca.jpg" alt="">
         <h1 class="fs-4 text-center">Gestion de alumnos - Séneca</h1>
@@ -34,4 +34,4 @@ require_once($rutaPHP."config.php");
             </ul>
         </nav>
     </aside>
-    <main class="col-lg-5 mx-auto py-md-5">
+    <main class="col-lg-8 mx-auto py-md-3">

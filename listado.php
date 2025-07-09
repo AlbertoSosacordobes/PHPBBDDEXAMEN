@@ -20,14 +20,12 @@
        
        <?php
             if (isset($_POST['filtrar'])) {
-                echo "vengo de POST";
                 $nomApe = $_POST['nomApe'];
 
 
 
                 $consulta="SELECT * FROM alumnos WHERE CONCAT(nombre, ' ', apellido1, ' ', apellido2) like '%".$nomApe."%'";
             } else {
-                echo("vengo de menú");
                 $consulta ="SELECT * FROM alumnos";
             }
 
@@ -45,8 +43,8 @@
                 echo "<td> ".$fila['apellido2']." </td>\n";
                 echo "<td> ".$fila['fecha_nac']. " </td>\n";
                 echo "<td> ".$fila['email']. " </td>\n";
-                echo "<td><a href='editar.php?id=".$fila['id']."'>Editar</a></td>\n";
-                echo "<td><a href='borrado.php?id=".$fila['id']."'>Eliminar</a></td>\n";
+                echo "<td><a href='editar.php?id=".$fila['id']."' class='btn btn-primary'>Editar</a></td>\n";
+                echo "<td><a href='borrado.php?id=".$fila['id']."' class='btn btn-primary'>Eliminar</a></td>\n";
                 echo "</tr>\n";
                 
             }

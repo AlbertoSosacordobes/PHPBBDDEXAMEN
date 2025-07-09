@@ -30,3 +30,22 @@ create table asignaturas (
     creditos FLOAT DEFAULT 6 check(creditos>0),
     curso TINYINT unsigned 
 );
+
+
+drop table if exists vehiculos;
+create table vehiculos (
+    matricula char(8) primary key,
+    marca varchar(20) NOT NULL,
+    modelo varchar(30) NOT NULL,
+    tipo enum('turismo','autobús', 'camion', 'furgón') not null,
+    color varchar(20) not null,
+    fecha_matriculacion date default CURDATE(),
+    cilindrada smallint unsigned,
+    itv_pasada bool default TRUE NOT NULL
+);
+
+insert into vehiculos
+values('9991ABC', 'mercedes', 'citaro', 'autobús', 'blanco', '2016-06-03', 7.5, true),
+      ('1853DCL', 'porsche', 'panamera','turismo', 'rojo', '2019-01-03', 2.5, true),
+      ('8627ADD', 'ford', 'torneo','furgon', 'blanco', '2009-12-27', 2.5, false),
+      ('4250MLD', 'reanult', 'clio','turismo', 'verde', '2024-04-03', 2.5, true);

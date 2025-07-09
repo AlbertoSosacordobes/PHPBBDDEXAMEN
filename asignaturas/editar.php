@@ -29,31 +29,31 @@ $curso = $fila['curso'];
     <h2>Editar los datos de un alumno</h2>
 
      <form action="actualizar.php" method="post">
-        <div class="control">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" required value="<?=$nombre?>">
+        <div class="control mb-3">
+            <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required value="<?=$nombre?>" class="form-control">
         </div>
 
-        <div class="control">
-            <label for="tipo">Tipo:</label>
-            <select name="tipo" id="tipo" >
+        <div class="control mb-3">
+            <label for="tipo" class="col-sm-2 col-form-label">Tipo:</label>
+            <select name="tipo" id="tipo" class="form-select form-select-lg">
                 <option value="TRONCAL" <?=($tipo=="TRONCAL"?"SELECTED":"")?>>Troncal</option>
                 <option value="OBLIGATORIA" <?php if($tipo=="OBLIGATORIA") echo "SELECTED"?>>Obligatoria</option>
                 <option value="OPTATIVA" <?php if($tipo=="OPTATIVA") echo "SELECTED"?>>Optativa</option>
             </select>
         </div>
 
-        <div class="control">
-            <label for="creditos">Créditos:</label>
-            <input type="number" name="creditos" id="creditos" value="<?=$creditos?>" step="0.5" min="0.5" max="15" >
+        <div class="control mb-3">
+            <label for="creditos" class="col-sm-2 col-form-label">Créditos:</label>
+            <input type="number" name="creditos" id="creditos" value="<?=$creditos?>" step="0.5" min="0.5" max="15"  class="form-control">
         </div>
 
-        <div class="control">
-            <label for="curso">Curso:</label>
-            <input type="number" name="curso" id="curso" min="1" max="4" step="1" value="<?=$curso?>">
+        <div class="control mb-3">
+            <label for="curso" class="col-sm-2 col-form-label">Curso:</label>
+            <input type="number" name="curso" id="curso" min="1" max="4" step="1" value="<?=$curso?>" class="form-control">
         </div>
 
-        <div class="control">
+        <div class="control mb-3">
             <input type="submit" value="Editar Asignatura">
         </div>
 
