@@ -3,8 +3,8 @@
 <article>
     <h2>Listado de asignaturas </h2>
 
-    <table>
-        <thead>
+    <table class="table table-striped table-bordered table-hover align-middle">
+        <thead class="table-dark">
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>
