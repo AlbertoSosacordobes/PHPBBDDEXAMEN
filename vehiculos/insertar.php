@@ -37,9 +37,9 @@ require_once('../plantillas/cabecera.php');
            // ejecutamos la consulta
            $resultado = mysqli_query($conexion, $consulta);
            if ($resultado>0) {
-                echo "<p>Se ha insertado la asignatura satisfactoriamente</p>";
+                echo "<p>Se ha insertado la vehiculo satisfactoriamente</p>";
            } else {
-                echo "<p class='error'> Error al insertar la asignatura </p>";
+                echo "<p class='error'> Error al insertar el vehiculo </p>";
            }
 ?>
 
